@@ -1,0 +1,18 @@
+
+.container{
+    background: linear-gradient(45deg, #FC466B, #3F5EFB);
+    height: 110vh;
+    font-family: 'Montserrat', sans-serif;
+  }
+ 
+#header{
+    background-color: #FC466B;
+    padding: 20px;
+    text-align: center;
+}
+
+span{
+    font-size:48px;
+    color: #fff;
+   
+}

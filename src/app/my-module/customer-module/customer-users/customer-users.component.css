@@ -1,0 +1,138 @@
+table{
+    text-align: center;
+    border:1px solid pink;
+    border-collapse:collapse;
+    padding: 8px;
+    margin:30px 200px;
+    border-radius: 10px;
+    box-shadow: 8px 8px 4px rgb(175, 106, 159);
+  
+}
+
+
+#firstbutton{
+    border:1px solid grey;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10%;
+    background-image: linear-gradient(to right, #ee87d1 0%, #82aaee 51%, #f323b8 100%);
+    color: whitesmoke;
+    font-size: large;
+    transition: all 0.8s;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+
+#firstbutton:hover{
+    background-image: linear-gradient(to right,#f323b8 0%,  #82aaee 51%,#ee87d1 100% );
+}
+
+#firstbutton:hover{
+    text-decoration: underline;
+    background-color: rgb(245, 100, 4);
+}
+
+
+td{
+    padding:12px;
+}
+table tr:nth-child(even):hover{background-color:rgb(235, 140, 156)}
+
+
+
+table tr:hover{
+    background-color:pink;
+}
+
+
+
+table th {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-align: center;
+    background-color: rgba(155, 80, 120, 0.4);
+    color: white;
+  }
+
+
+
+#onDeleting{
+    background-color: rgb(252, 94, 32);
+    border: none;
+    border-radius: 12%;
+    color: white;
+    padding: 5px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    font-size: 16px;
+    margin-left: 1px;
+    cursor: pointer;
+    transition: all 0.8s;
+    width:68px;
+}
+
+#onDeleting:hover{
+    text-decoration: underline;
+    background-color: rgb(170, 55, 20);
+    
+}
+
+
+#onEditing{
+    background-color: #0a96e7;
+    border: none;
+    border-radius: 12%;
+    color: white;
+    padding: 5px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    font-size: 16px;
+    margin-right:3px ;
+    cursor: pointer;
+    transition: all 0.8s;
+    width: 60px;
+}
+
+#onEditing:hover{
+    text-decoration: underline;
+    background-color: rgb(56, 194, 236);
+}
+
+#addData{
+    display: inline-block;
+    border:1px solid grey;
+    cursor: pointer;
+    padding: 15px;
+    margin: 20px;
+    margin-right: 400px;
+    text-align: center;
+    border-radius: 10%;
+    background-color: rgba(122, 11, 226, 0.932);
+    color: whitesmoke;
+    font-size: large;
+    transition: all 0.8s;
+    margin:auto;
+    
+}
+
+.customerText{
+    font-size:30px;
+    color:white;
+    text-align:center;
+    width:800px;
+   margin:auto;
+}
+
+
+#btn{
+    text-align: center;
+}
+
+#addData:hover{
+    text-decoration: underline;
+    background-color: rgb(46, 5, 94);
+}

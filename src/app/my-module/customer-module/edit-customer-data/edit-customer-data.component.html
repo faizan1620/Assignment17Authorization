@@ -1,0 +1,48 @@
+<div class="form-group">
+
+
+ 
+
+    <form [formGroup]='signupform' (ngSubmit)="onSubmit(signupform.value)">
+    <a [routerLink]="" (click)="cancel()"><span class="symbol">&#9447;</span></a>
+      
+      <h2>Update Customer Form</h2>
+    
+     
+      <div class="form-group1">
+        
+         
+      
+      
+        <label for="cname">Customer Name</label>
+        <input id="cname" type="text" name="cname" formControlName="cname">
+      
+    </div>
+    
+       
+      
+      
+     
+     
+    <div class="form-group1">
+      <label for="website">Website</label>
+      <input id="website" type="text" name="website" formControlName="website">
+    
+        <label for="caddress">Customer Address</label>
+        <input id="caddress" type="text" name="caddress" formControlName="caddress">
+    </div>
+    
+  <div><span class="warning-block" *ngIf="!signupform.valid">All fields are required! Please enter. </span></div>       
+    
+     <div class="btns clear">
+        
+        <input type="Submit" value="Save" [disabled]="!signupform.valid">
+        <input type="button" id="cancel" value="Reset" (click)="reset()">
+      </div> 
+        
+    
+    </form>
+    
+       
+     </div>
+    

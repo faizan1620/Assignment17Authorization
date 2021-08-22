@@ -1,0 +1,22 @@
+#firstbutton{
+    border:1px solid grey;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10%;
+    background-image: linear-gradient(to right, #ee87d1 0%, #82aaee 51%, #f323b8 100%);
+    color: whitesmoke;
+    font-size: large;
+    transition: all 0.8s;
+    margin-top: 30px;
+
+}
+
+
+#firstbutton:hover{
+    background-image: linear-gradient(to right,#f323b8 0%,  #82aaee 51%,#ee87d1 100% );
+}
+
+#firstbutton:hover{
+    text-decoration: underline;
+    background-color: rgb(245, 100, 4);
+}

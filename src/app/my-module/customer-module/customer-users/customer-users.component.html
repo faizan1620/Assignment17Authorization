@@ -1,0 +1,51 @@
+<div style="text-align: center">
+    <button id="firstbutton" routerLink="/customer-data">Show Customers</button>
+</div>
+
+<div class="customerText"> User data associated with customer Id: {{this.id}}
+    <hr/>  
+</div>
+
+<table>
+    <tr>
+        <th>User Id</th>
+        <th>First Name</th>
+        <th>Middle Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+        <th>Phone Number</th>
+        <th>Address</th>
+        <th>Customer Id</th>
+        <th>Role Id</th>
+        
+        <th>Created On</th>
+        <th>Modified On</th>
+        
+        
+        <th>Actions</th>
+    </tr>
+    <tr *ngFor="let row of myData; let i=index">
+        
+      
+        <td>{{myData[i]['uid']}}</td>
+        <td>{{myData[i]['FirstName']}}</td>
+        <td>{{myData[i]['MiddleName']}}</td>
+        <td>{{myData[i]['LastName']}}</td>
+        <td>{{myData[i]['Email']}}</td>
+        <td>{{myData[i]['PhoneNumber']}}</td>
+        <td>{{myData[i]['Address']}}</td>
+        <td>{{myData[i]["customerId"]}}</td>
+        <td>{{myData[i]["roleId"]}}</td>
+        <td>{{myData[i]["createdon"]}}</td>
+        <td>{{myData[i]["modifiedon"]}}</td>
+        <td id="button1" style="white-space: nowrap"> <button id="onEditing" [routerLink]="['/edit-customer-user',myData[i]['uid']]">Edit</button>
+             <button id="onDeleting"
+                (click)="deleteData(myData[i]['uid'])">Delete</button> </td>
+
+       </tr>
+       
+ </table>
+ <div id=btn>
+ <button id="addData" (click)="addData()">Add Data</button>
+ </div>
+ 

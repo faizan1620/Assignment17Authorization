@@ -1,0 +1,32 @@
+<div style="text-align: center">
+    <button id="firstbutton" routerLink="/crudtable">Dashboard</button>
+</div>
+<table>
+    <tr>
+        <th>Customer Id</th>
+        <th>Customer Name</th>
+        <th>Website</th>
+        <th>Customer Address</th>
+        <th>Display</th>
+        
+        
+        <th>Actions</th>
+    </tr>
+    <tr *ngFor="let row of myData; let i=index">
+        
+      
+        <td>{{myData[i]['cid']}}</td>
+        <td>{{myData[i]['cname']}}</td>
+        <td>{{myData[i]['website']}}</td>
+        <td>{{myData[i]['caddress']}}</td>
+        <td><button id="showbtn" style="white-space: nowrap" [routerLink]="['/customer-users',myData[i]['cid']]">Show Users</button></td>
+        <td id="button1" style="white-space: nowrap"> <button id="onEditing" [routerLink]="['/edit-customer-data',myData[i]['cid']]">Edit</button>
+             <button id="onDeleting"
+                (click)="deleteData(myData[i]['cid'])">Delete</button> </td>
+
+       </tr>
+       
+ </table>
+ <div id=btn>
+ <button id="addData" routerLink="/add-customer-data">Add Data</button>
+ </div> 

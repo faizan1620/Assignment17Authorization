@@ -1,0 +1,98 @@
+<div class="form-group">
+
+
+ 
+
+    <form [formGroup]='signupform' (ngSubmit)="onSubmit(signupform.value)">
+    <a [routerLink]="" (click)="cancel()"><span class="symbol">&#9447;</span></a>
+      
+      <h2>Add Customer with Id: {{this.id}} users</h2>
+    
+     
+      <div class="form-group1">
+        
+          <label for="uid">User Id:</label>
+          <input id="uid" type="number" name="uid" formControlName="uid">
+      
+      
+        <label for="fname">First Name</label>
+        <input id="fname" type="text" name="fname" formControlName="FirstName">
+      
+    </div>
+    
+       
+      
+      
+     
+     
+    <div class="form-group1">
+      <label for="mname">Middle Name</label>
+      <input id="mname" type="text" name="mname" formControlName="MiddleName">
+    
+        <label for="lname">Last Name</label>
+        <input id="lname" type="text" name="lname" formControlName="LastName">
+    </div>
+    
+    
+        
+    
+   
+    
+    <div class="form-group1">
+      <label for="email">Email</label>
+        <input id="email" type="text" name="email" formControlName="Email">
+    
+        <label for="phonenumber">Phone Number</label>
+        <input id="phonenumber" type="text" name="phonenumber" formControlName="PhoneNumber">
+        
+    
+      
+       
+        </div>
+    
+    
+
+  
+<div class="form-group1">
+  
+  
+              <label for="roleId">Role Id</label>
+              <input id="roleId" type="number" name="roleId" formControlName="roleId">
+              
+  
+          
+             </div>
+
+
+        <div class="form-group1">
+  
+         
+    
+          <label for="address">Address</label>
+          <input id="address" type="text" name="address" formControlName="Address">
+          
+            
+  </div>
+    
+  <div><span class="warning-block" *ngIf="!signupform.valid">All fields are required! Please enter. </span></div>
+                
+              
+  
+                  
+              
+              
+                  
+                 
+    
+     <div class="btns clear">
+        
+        <input type="Submit" value="Save" [disabled]="!signupform.valid">
+        <input type="button" id="cancel" value="Reset" (click)="reset()">
+      </div> 
+        
+    
+    </form>
+    
+       
+     </div>
+    

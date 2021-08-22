@@ -1,0 +1,197 @@
+form {
+    background: rgba(255,255,255,0.3);;
+    padding: 0.5em 3em;
+    
+    margin-top: 130px;
+    border-radius: 20px;
+    border-left: 1px solid rgba(255,255,255,0.3);
+    border-top: 1px solid rgba(255,255,255,0.3);
+    backdrop-filter: blur(10px);
+    box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+    position: relative;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  h2{
+    text-align:center;
+    font-style:oblique;
+    display: block;
+    color: #ca44ca;
+    font-size: 28px;
+    
+  }
+  
+  
+  
+  
+  input[type=submit],input[type=button] ,input[type=number]{
+     
+      color: white;
+      font-size:20px;
+      padding: 12px 28px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      border: none;
+      border-left: 1px solid rgba(255,255,255,0.3);
+      border-top: 1px solid rgba(255,255,255,0.3);
+      border-radius: 5000px;
+      backdrop-filter: blur(5px);
+      box-shadow: 4px 4px 60px rgba(0,0,0,0.2);
+      color: #fff; 
+      transition: all 0.2s ease-in-out;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+      background: Transparent;
+    }
+  
+    input[type=submit]:disabled {
+      color: white;
+      font-size:20px;
+      padding: 12px 28px;
+      border: none;
+      border-radius: 4px;
+      cursor: not-allowed;
+      border: none;
+      border-left: 1px solid rgba(255,255,255,0.3);
+      border-top: 1px solid rgba(255,255,255,0.3);
+      border-radius: 5000px;
+      backdrop-filter: blur(5px);
+      box-shadow: 4px 4px 60px rgba(0,0,0,0.2);
+      color: rgb(211, 206, 206); 
+      transition: all 0.2s ease-in-out;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+      background: Transparent;
+    }
+    
+    .form-group1{
+      
+      float: left;
+    }
+  
+  
+    .clear{
+      clear: both;
+      width:410px;
+      text-align: center;
+     
+    }
+    label{
+      font-weight: 400;
+      color: #fff;
+      opacity: 0.8;
+    }
+   
+  
+    input[type=text],input[type=number] {
+      width: 95%; 
+      padding: 12px;  
+      border: 1px solid #ccc;
+      border-radius: 4px; 
+      box-sizing: border-box; 
+      margin-top: 7px; 
+      margin-bottom: 16px; 
+      resize: vertical ;
+      display: inline-block;
+      border: 1px solid transparent;
+      border-left: 1px solid rgba(255,255,255,0.3);
+      border-top: 1px solid rgba(255,255,255,0.3);
+      border-radius: 5000px;
+      backdrop-filter: blur(5px);
+      box-shadow: 4px 4px 60px rgba(0,0,0,0.2);
+      color: #fff; 
+      transition: all 0.2s ease-in-out;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+      background: Transparent;
+      
+      
+    }
+   
+  input:hover,select:hover{
+    background: rgba(255,255,255,0.2);
+        box-shadow: 4px 4px 60px 8px rgba(0,0,0,0.2);
+  }
+  
+    input:focus,
+    select:focus{
+      outline:none;
+      
+    }
+  
+   
+  
+    input[type=submit]:hover {
+      background: rgba(255,255,255,0.1);
+      box-shadow: 4px 4px 60px 8px rgba(0,0,0,0.2);
+    }
+  
+  
+  
+    select{
+      width: 90%; 
+      padding: 12px;   
+      border: 1px solid #ccc;
+      border-radius: 4px; 
+      box-sizing: border-box; 
+      margin-top: 11px; 
+      margin-bottom: 26px; 
+      resize: vertical ;
+      display: block;
+      border: none;
+      border-left: 1px solid rgba(255,255,255,0.3);
+      border-top: 1px solid rgba(255,255,255,0.3);
+      border-radius: 5000px;
+      backdrop-filter: blur(5px);
+      box-shadow: 4px 4px 60px rgba(0,0,0,0.2);
+      color: rgb(224, 207, 207); 
+      transition: all 0.2s ease-in-out;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+      background: Transparent;
+    }
+  
+    
+  
+    #cancel{
+     
+      color: black;
+      font-size:20px;
+      padding: 12px 20px;
+      border: none;
+      margin: 10px;
+      border-radius: 5000px;
+      cursor: pointer;
+      
+    }
+  
+    #cancel:hover{
+      text-decoration :underline;
+    }
+  
+  .form-group{
+      width: 510px;
+      margin:0 auto;
+      position: absolute;
+      transform: translate(-50%,-50%);
+      top: 50%;
+      left: 50%;
+      
+      
+  }
+
+  .symbol{
+    font-size: 32px;
+    float:right;
+    color: white;
+    
+  }
+  
+  .btns{
+    text-align: center;
+  }
+  
+  .warning-block{
+    color:red;
+  }
+  
+  input.ng-invalid.ng-touched{
+    border:1px solid red;
+  }
