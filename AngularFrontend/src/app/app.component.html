@@ -1,0 +1,14 @@
+<div class="container">
+    <div id="header">
+        <span>Angular Loopback Assignment</span>
+    
+        <div *ngIf="this.authGuard.isLoggedIn">
+            <button id="logout" (click)="logout()">Log Out</button>
+        </div>
+           
+        
+    </div>
+
+    <router-outlet></router-outlet>
+    
+</div>

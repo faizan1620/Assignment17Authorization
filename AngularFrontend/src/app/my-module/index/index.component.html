@@ -1,0 +1,28 @@
+<div style="text-align: center">
+    <div class="container" id="container">
+        <div class="form-container sign-in-container">
+            <form [formGroup]="signinForm" (ngSubmit)="login(signinForm.value)">
+                <h1>Please Sign In to start with us!</h1>
+               
+                <input type="email" placeholder="Email" formControlName="email" />
+                <input type="password" placeholder="Password" formControlName="password" />
+                <button>Sign In</button>
+                <p style="color:red" *ngIf="isError">{{errMessage}}</p>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Enter your details and get registered with us</p>
+                    <button class="ghost" id="signUp" routerLink="/add-data">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+      
+         
+        
+     
+    
+</div>
