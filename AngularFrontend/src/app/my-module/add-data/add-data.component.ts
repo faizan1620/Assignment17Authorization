@@ -47,7 +47,7 @@ export class AddDataComponent implements OnInit {
      this.router.navigate(['/crudtable']);
     },
     (err:any)=>{
-      alert("Something went wrong. This data can't be added !!");
+      alert(err.message);
     });
   }
 }

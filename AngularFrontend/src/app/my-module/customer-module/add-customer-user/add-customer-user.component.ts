@@ -25,6 +25,7 @@ export class AddCustomerUserComponent implements OnInit {
         'LastName':new FormControl(null,[Validators.required]),
         'Email':new FormControl(null,[Validators.required,Validators.email]),
         'PhoneNumber':new FormControl(null,[Validators.required,Validators.pattern("^((\\+91-?)|0)?[0-9]{10}$")]),
+        'password':new FormControl(null,[Validators.required,Validators.minLength(6)]),
         'Address':new FormControl(null,[Validators.required]),
         'customerId':new FormControl(this.id,[Validators.required]),
         'roleId':new FormControl(null,[Validators.required])
@@ -33,12 +34,14 @@ export class AddCustomerUserComponent implements OnInit {
   }
 
   onSubmit(value: any) {
+   
     this.mainService.addUser(value).subscribe((res:any)=>{
       alert("Data added successfully !!");
       this.router.navigate([`/customer-users/${this.id}`]);
      },
      (err:any)=>{
-       alert("Something went wrong. This data can't be added !!");
+       
+       alert(err.message);
      });
   }
 

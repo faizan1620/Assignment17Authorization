@@ -25,7 +25,7 @@ export class CustomerDataComponent implements OnInit {
 
 
     },(err)=>{
-      alert("This customer is associated with some user(s), Cannot be deleted directly !!")
+      alert(err.message);
     });
     
   }

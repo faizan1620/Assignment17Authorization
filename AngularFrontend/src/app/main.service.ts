@@ -29,7 +29,7 @@ export class MainService {
    addUser(user:any):Observable<any> {
     const headers = new HttpHeaders({ 'Access-Control-Allow-Origin': '*',
     'content-type': 'application/json'});
-   
+    console.log(user);
     return this._httpClient.post(`${this.baseurl}`+`/signup`,user,{'headers':headers});
   
 

@@ -53,7 +53,7 @@ onSubmit(value:any) {
     this.router.navigate([`/customer-users/${this.myData['customerId']}`]);
    },
    (err:any)=>{
-     alert("Something went wrong. This data can't be updated !!");
+     alert(err.message);
    });
 }
 

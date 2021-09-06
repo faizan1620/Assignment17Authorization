@@ -42,7 +42,7 @@ export class EditCustomerDataComponent implements OnInit {
       this.router.navigate(['/customer-data']);
      },
      (err:any)=>{
-       alert("Something went wrong. This data can't be added !!");
+       alert(err.message);
      });
 
   }

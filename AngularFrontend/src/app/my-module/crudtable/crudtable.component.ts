@@ -33,12 +33,12 @@ export class CrudtableComponent implements OnInit {
   deleteData(id:any){
     
     this.mainService.deleteUser(id).subscribe((res:any) => {
-      
-
-
-    });
-    alert(`Data with id: ${id} successfully deleted`);
+      alert(`Data with id: ${id} successfully deleted`);
     this.ngOnInit();
+  },(err)=>{
+    alert(err.message);
+  });
+    
 
   }
 

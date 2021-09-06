@@ -30,10 +30,12 @@ export class CustomerUsersComponent implements OnInit {
 
   deleteData(id:any){
     this.customerService.deleteUser(id).subscribe((res:any) => {
-      
+      alert(`Data with id: ${id} successfully deleted`);
+      this.ngOnInit();  
+    },(err)=>{
+      alert(err.message);
     });
-    alert(`Data with id: ${id} successfully deleted`);
-      this.ngOnInit();
+    
    
 
   }
